@@ -1,4 +1,5 @@
-#include <iostream> #include <random> 
+#include <iostream> 
+
 
 using namespace std;
 int main()
@@ -11,7 +12,7 @@ int main()
     {
         for(int j=0;j<4;j++)
         {
-                int >m[i][j]; = std::rand()%15;
+                 m[i][j] = rand()%15;
 
           
            
@@ -19,23 +20,33 @@ int main()
               
             
         }}
-        for(int i=0;i<4;i++)
+
+        cout<<"la matrice è";
+cout<<endl;
+for(int i=0;i<4;i++)
+{
+for(int j=0;j<4;j++)
+{
+cout<<m[i][j]<<"";
+}
+cout<<endl;
+}
+
+for(int i=0;i<4;i++)
      {
         for(int j=0;j<4;j++)
         {
             if(i==j){
                 prodotto=m[i][j]*prodotto;
 
-            } else {
-             
-            }
+            } 
 
         
         
         }}
         cout<<"IL PRODOTTO DEI VALORI DIAGONALI è PARI A" <<endl;
          cout<<prodotto;
-         
+
 
         
         
